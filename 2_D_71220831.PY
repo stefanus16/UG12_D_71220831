@@ -1,12 +1,18 @@
 print("~~~~~ Table Matematika Nich ~~~~~")
-print("pilihan model matematika")
+print("Pilihan Model Matematika")
+
 print("1. Perkalian")
 print("2. Pembagian")
-input("Masukan model matematika yang diinginkan 1/2: ")
-angka = int(input("menampilkan tabel matematika dari angka: "))
-for i in range(1,11):
-    print(angka, 'x', i, '=', angka*i)
+model=int(input("Masukkan model matematika yang diinginkan 1/2 :"))
+angka=int(input("Menampilkan table matematika dari angka:"))
+if(model==1) :
+    for i in range(1,11)   :
+        hasil = (angka*i)
+        print(angka, "x", i, "=", hasil)
 
-angka = int(input("menampilkan table matematika dengan angka: "))
-for x in range(50,66):
-    print(x, ":", angka, "=", x/angka)
+elif(model==2) :
+    for a in range(50,66) :
+        hasil = (a/angka)
+        print(a, ":", angka, "=", hasil)
+else :
+    print("Pilihan tidak tersedia, jangan ngasal!")

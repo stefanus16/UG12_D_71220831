@@ -9,4 +9,4 @@ for i in range(1,11):
 
 angka = int(input("menampilkan table matematika dengan angka: "))
 for x in range(50,66):
-    print(angka, ":", x, "=", angka/x)
+    print(x, ":", angka, "=", x/angka)
